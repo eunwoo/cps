@@ -1,0 +1,10 @@
+^C:\USERS\JIEUN\PROG\CPP\CPS\BUILD\CMAKEFILES\B0465B31E34C54FDB13FEE405A1A8C1B\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/jieun/prog/cpp/cps -BC:/Users/jieun/prog/cpp/cps/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/jieun/prog/cpp/cps/build/cps.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
